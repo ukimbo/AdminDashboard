@@ -39,14 +39,22 @@ body {
 }
 
 .sidebar p {
+    align-items: center;
     font-size: 1.8rem;
     cursor: default;
+    display: flex;
+    gap: 4px;
+}
+
+.sidebar p > svg {
+    width: 2.3rem;
+    fill: white;
 }
 
 .sidebar ul {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 24px;
 }
 
 .sidebar ul > li:hover {
@@ -57,6 +65,16 @@ body {
 
 .dash-main {
     flex: 1 auto;
+}
+
+.sidebar ul > li {
+    display: flex;
+    gap: 10px;
+}
+
+.sidebar ul > li > svg {
+    width: 2rem;
+    fill: white;
 }
 
 /* Nav bar content */
@@ -82,9 +100,6 @@ body {
     gap: 16px;
 }
 
-.search-img {
-}
-
 #search {
     background-color: #272a2f;
     border: 6px solid #272a2f;
@@ -92,11 +107,17 @@ body {
     padding: 8px;
     border-radius: 48px;
     flex: 1 auto;
+    font-size: 18px;
 }
 
 #search:focus {
     outline: none;
     border: 6px solid #272a2f;
+}
+
+.search-bar > svg {
+    width: 40px;
+    fill: #f0f0f0;
 }
 
 .profile,
@@ -108,8 +129,39 @@ body {
     font-weight: 700;
 }
 
+.profile > div > svg {
+    width: 1.5rem;
+    fill: #f0f0f0;
+}
+
+.profile > div > svg:hover {
+    width: 1.5rem;
+    fill: #d3a5ac;
+}
+
+.pfp {
+    background-image: url(./img/Photo\ Nov\ 07\ 2023\,\ 6\ 36\ 46\ PM.jpg);
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.small {
+    width: 48px;
+    height: 48px;
+}
+
+.large {
+    width: 96px;
+    height: 96px;
+}
+
 .greetings {
     cursor: default;
+    gap: 24px;
+}
+
+.greetings > div > p {
+    font-size: 1.5rem;
 }
 
 .buttons {
@@ -178,22 +230,38 @@ button:hover {
     border-radius: 24px;
     display: flex;
     flex-direction: column;
-
     gap: 4px;
 }
 
+.card {
+    gap: 16px;
+    justify-content: space-evenly;
+    overflow: scroll;
+}
 .post > .title {
     font-size: 1.3rem;
 }
 
 .post > .text-content {
     flex: 1 auto;
+    overflow: scroll;
 }
 
 .post > .interactions {
     display: flex;
     justify-content: end;
-    gap: 16px;
+    gap: 24px;
+}
+
+.post > .interactions > svg {
+    width: 2rem;
+    fill: #f0f0f0;
+}
+
+.post > .interactions > svg:hover {
+    width: 2rem;
+    fill: #d3a5ac;
+    cursor: pointer;
 }
 
 .sidebar li,
